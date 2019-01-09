@@ -1,3 +1,4 @@
+import Model.Actor;
 import Model.Movie;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,5 +15,12 @@ public class TestMovie{
     @Test
     public void getName(){
         assertEquals("Harry Potter", harryPotter.getName());
+    }
+
+    @Test
+    public void contractActor(){
+        Actor radcliffe = new Actor("Daniel Radcliffe");
+        harryPotter.contractActor(radcliffe);
+        assertEquals(1, harryPotter.getActors().size());
     }
 }

@@ -10,6 +10,8 @@ public class Actor {
         this.name = name;
     }
 
+    public String getName(){return name;}
+
     public int getAge() {
         return age;
     }
