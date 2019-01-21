@@ -5,11 +5,15 @@ import java.util.List;
 
 public class Movie {
 
+    private Double id;
     private String name;
     private List<Actor> actors = new ArrayList<Actor>();
     private int last;
     private double calification = 0;
     private String genres;
+
+    public Movie(){
+    }
 
     public Movie(String name, int last, String genres){
         this.name = name;
@@ -17,7 +21,16 @@ public class Movie {
         this.genres = genres;
     }
 
+    //Setter
+    public void setId(Double id) {
+        this.id = id;
+    }
+
     //Getter
+    public Double getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
